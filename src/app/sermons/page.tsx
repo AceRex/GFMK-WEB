@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import ImageTest from "./maxresdefault.jpg";
+import cover from "./cover.jpg";
 import { CiPlay1, CiStop1 } from "react-icons/ci";
 import { TbLocationShare } from "react-icons/tb";
 import { AiOutlineFacebook } from "react-icons/ai";
@@ -22,7 +23,7 @@ export default function Home() {
   return (
     <main className={`min-h-screen gap-2 items-center justify-between`}>
       <div className="w-[75%] m-auto p-12">
-        <PageTitle search/>
+        <PageTitle search />
         <div className="bg-dark shadow-xl mb-2 w-[100%] relative h-[75vh] rounded-2xl overflow-hidden">
           <div
             className="absolute w-full h-full flex items-center place-content-center "
@@ -76,12 +77,12 @@ export default function Home() {
             </div>
           </div>
           {!preview ? (
-            <Image src={ImageTest} alt="" className="h-full w-full" />
+            <Image src={cover} alt="" className="h-full w-full" />
           ) : (
             <iframe
               width="1000"
               height="585"
-              src={`https://www.youtube.com/embed/LXUeGAiiSYU?${
+              src={`https://www.youtube.com/embed/85B_DpmMunk?si=6Zkh7zek43EFKsai${
                 play && !preview
                   ? "autoplay=1&mute=1&modestbranding=1&showinfo=0&controls=0&rel=0"
                   : play && preview

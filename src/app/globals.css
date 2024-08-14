@@ -12,6 +12,8 @@
 body {
   color: rgb(var(--color));
   background: var(--background);
+  font-family: "Montserrat", sans-serif;
+
 }
 
 @layer utilities {
@@ -27,6 +29,7 @@ body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  
 }
 .shiny-text {
   background: linear-gradient(90deg, #ffa600, #fffb07, #ffa600);
@@ -34,7 +37,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: shine 2s linear infinite;
+  animation: shine 5s linear infinite;
 }
 
 @keyframes shine {

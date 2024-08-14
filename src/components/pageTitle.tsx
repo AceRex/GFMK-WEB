@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 function PageTitle({ search }: { search: boolean }) {
   const location = usePathname().split("/")[1];
   return (
-    <div className="w-full flex justify-between items-center place-content-center mb-4">
+    <div className="w-full flex justify-between items-center place-content-center mt-10 mb-4">
       <h2 className="font-bold text-3xl w-[60%] tracking-tight capitalize">
         {location}
       </h2>
